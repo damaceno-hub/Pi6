@@ -1,0 +1,91 @@
+.datetime{
+  color: #fff;
+  background: rgb(27, 27, 27);
+  font-family: "Segoe UI", sans-serif;
+  padding: 15px 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+  user-select: none;
+  cursor: default;
+}
+
+.datetime:hover{
+  background: #5c0eb4;
+  box-shadow: 0 0 30px #5c0eb4;
+}
+
+.date{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time #periodo{
+  background: #5c0eb4;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+/* clock ban off */
+
+.ate #ate{
+    background: #5c0eb4;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.dateoff{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.timeoff{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeoff span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.timeoff #periodooff{
+  background: #5c0eb4;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}

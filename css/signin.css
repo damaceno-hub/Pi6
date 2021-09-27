@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
+
+body {
+  font-family: Bitstream Vera Sans, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+  padding-bottom: 40px;
+  background-color: #343434;
+  color: #757575;
+}
+
+footer {
+	position: fixed;
+	bottom:0;
+	left:0;
+	background-color: #13151a;
+	color: #fff;
+	width: 100%;
+}
+
+#head, #foot {
+	height: 6%;
+	min-height: 25px;
+	width: 100%;
+	background-color: #222;
+  position: fixed;
+	overflow: hidden;
+  z-index: 1030;
+}
+
+#foot{
+	text-align: center;
+}
+
+#foot > span,#head > span {
+	top: 35%;
+	position: relative;
+	padding: 20px;
+}
+
+#foot > span {
+	color: #393939;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  color: white!important;
+  font-weight: bold;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom:20px;
+  margin-top: 20px;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;  
+  margin-bottom:20px;
+  margin-top: 20px;
+}
+
+input[type="text"]:valid, input[type="password"]:valid {
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: solid;
+  border-right-width: 3px;
+	border-color: #67d00b;
+	background-color: #272727;
+}
+
+
+input[type="text"]:invalid, input[type="password"]:invalid {
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: solid;
+	border-right-width: 3px;
+	border-color: red;
+	background-color: #272727;
+}
+
+input #keeplogged {
+	background-color: #4c4c4c;
+}
+
+::placeholder{
+  color: white!important;
+	font-weight: bold;
+}
+
+.namefooter{
+	color:#5c0eb4!important;
+	text-decoration: none!important;
+}
+
+.namefooter:hover{
+  color:#fff!important;
+  text-decoration: none!important;
+  transition: 0.5s;
+}
+
+.baixologo{
+  color: #757575!important;
+	text-decoration: none!important;
+}
+
+.baixologo:hover{
+  color:#fff!important;
+	text-decoration: none!important;
+  transition: 0.5s;
+}
+
+#logo {
+	height: 60px;
+	width: 205px;
+	background-image: url('../cadastro/images/logo-hacked-mini-black.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+}
+
+#logo ul {
+  float: left;
+  left: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#logo ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+  margin: 0 1em 0 0;
+  list-style: none;
+}
+
+.logo ul {
+  float: left;
+  left: 27%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo ul li {
+  float: left;
+  position: relative;
+  right: 20%;
+  margin: 0 1em 0 0;
+  list-style: none;
+}
+
+.img-pointer{
+	pointer-events: none;
+	padding: 10px;
+}
+
+.btn-color{
+  background-color: #272727;
+  border-color: #272727;
+  color: white;
+}
+
+.btn-color:hover{
+  background-color: #151515;
+  border-color: #151515;
+  box-shadow: 0 0 1em #13151a;
+	transition: 0.2s;
+}
+
+#keeplogged, .keeplogged{
+  padding: 10px;
+}
+
+.centralizar {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+  }
+
+  #info-cad{
+    color:#757575;
+    text-decoration: none!important;
+    cursor: pointer;
+  }
+
+#info-cad:hover{
+    color:#a3a3a3;
+    text-decoration: none!important;
+    transition: 0.3s;
+  }
+
+.register-closed{
+  color:#5c0eb4;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#info-cad:hover > .closed-reg span:last-child{
+  color: #fff;
+  transition: 0.5s;
+}
+
+
+.form-control:focus, .form-control:hover{
+  border-color: #13151a;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 12px rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+}
+
+/* RELOGIO */
+
+.datetime{
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+
+}
+
+.datetime:hover{
+  text-shadow: 0 0 1em #13151a;
+	color:rgb(201, 201, 201);
+  transition: 0.5s;
+}
+
+.datetime:hover > .time span:last-child{
+  text-shadow: 0 0 1em #13151a;
+  background: #ffffff;
+	color: #5c0eb4;
+  transition: 0.5s;
+}
+
+
+.date{
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.time{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child{
+  background: #5c0eb4;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+/* END RELOGIO */
+
+#select_genero{
+	font-family: "tahoma", "arial", "helvetica", "sans-serif";
+	font-size: 12pt;
+  font-weight: bold;
+	width: 100%;
+	outline-style: unset;
+  border-style: none;
+  border-radius: 0.25rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom: 20px;
+	background-color: #272727;
+}
+
+.custom-select-genero {
+  position: relative;
+}
+
+.custom-select-genero select {
+  display: none; 
+}
+
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: white transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent white transparent;
+  top: 12px;
+}
+
+.select-items div,.select-selected {
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #272727!important;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-select-genero:hover{
+  border-color: #13151a;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 12px rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+}
+
+.btn-cad{
+  max-width: 28%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.title-pg {
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+
+.esquecisenha{
+  cursor: pointer;
+}
+
+.esquecisenha:hover{
+  color: white;
+  transition: 0.5s;
+}
