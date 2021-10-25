@@ -9,11 +9,11 @@
 
 $(window).on('scroll', function(){
   if($(window).scrollTop()){
-      $('#image').attr('src', 'img/logo-light.png');
+      $('#image').attr('src', 'img/logo-oslog.png');
       $('#image').removeClass('logo-index');
 
   }else{
-  $('#image').attr('src', 'img/logo-index.png');
+  $('#image').attr('src', 'img/logo-white.png');
   $('#image').addClass('logo-index');
   }
 })
