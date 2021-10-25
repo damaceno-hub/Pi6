@@ -19,7 +19,7 @@
 
 <html>
     <head>
-        <title><?php echo "CLIENTE :: ".$_SESSION['nome']." "?></title>
+        <title><?php echo "PAINEL :: ".$_SESSION['nome']." "?></title>
         <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content=""/>
@@ -56,13 +56,6 @@
                 window.open("../cliente/painel.php", '_parent');
             }
 
-            function config() {
-                window.open("../cliente/configuracoes.php", '_parent');
-            }
-
-            function curriculo() {
-                window.open("../cliente/curriculo.php", '_parent');
-            }
         </script>
     </head>
     <body>
@@ -85,7 +78,7 @@
                     <div class="col ola-php">
                         <span>
                             <?php
-                                echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo! - <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nivelNome']."</span> ";
+                                echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo ao Painel <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nivelNome']."</span> ";
                             ?>
                         </span>
                     </div>
@@ -98,30 +91,8 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div id="top-head">
-            <div class="col-md-12 text-center">
-               
-                <div class="nav-menu-icon">
-                    <a><i id="bar-mobile" class="fa fa-bars"></i></a>
-                </div>
 
-                <div class="nav-menu">
-                    <ul class="nav-menu-inner">
-                        <li><a onclick="forum()">Home</a></li>
-                        <li><a onclick="curriculo()">Currículo</a></li>
-                        <li><a onclick="config()">Configurações</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-                     
-                    
-                
-            </div>
-        </div>
-    <br>
+            <br>
             <br>
             <br>
             <br>
@@ -132,7 +103,7 @@
                 <div class="col-md-12 text-center">
                     <h2 class="title-pg color-white">
                         <?php
-                                echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo! - <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nivelNome']."</span> ";
+                                echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo ao Painel <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nivelNome']."</span> ";
                             ?>
                     </h2>
                     

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 27-Set-2021 às 00:24
+-- Tempo de geração: 25-Out-2021 às 00:13
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.3.21
 
@@ -134,20 +134,19 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `telefone` varchar(16) NOT NULL,
   `niveis_acesso_id` int(11) NOT NULL DEFAULT '0',
   `genero_id` int(11) NOT NULL,
-  `grau_esc_id` int(11) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `telefone`, `niveis_acesso_id`, `genero_id`, `grau_esc_id`, `created`) VALUES
-(1, 'Ronin', 'roninls@sempreceub.com', '$2y$10$LHNDbYoB.SUCJ4YvvlyU8eLDwRqDBu0.cY.EpcATvwXEFLRufRRKe', '(61) 9 8565-2243', 1, 1, 7, '2021-04-27 05:50:38'),
-(2, 'Teste2', 'teste2@teste.com', '$2y$10$PkseJ4qGZi2MfWlLK7Q6/.im.3JBR/h.tw0QoXpS5v9ZF2ESgH9P2', '(61) 9 9999-9999', 0, 1, 8, '2021-06-12 19:55:15'),
-(3, 'Teste3', 'teste3@teste.com', '$2y$10$NTCLhYpUCX6difeBTcJyauXiwx7eRChhnmrXVZSfakvXYhZaAgIem', '(61) 9 1234-5678', 0, 1, 5, '2021-06-20 01:22:54'),
-(4, 'Santana', 'santana@gmail.com', '$2y$10$DIOmqOcNsulJTuwhAv.vMOxsD4Ub5d1bOIBpO8ILvJbzW4WSUe9bS', '(61) 2 2222-2222', 0, 1, 8, '2021-06-28 22:32:20');
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `telefone`, `niveis_acesso_id`, `genero_id`, `created`) VALUES
+(1, 'Ronin', 'roninls@sempreceub.com', '$2y$10$LHNDbYoB.SUCJ4YvvlyU8eLDwRqDBu0.cY.EpcATvwXEFLRufRRKe', '(61) 9 8565-2243', 1, 1, '2021-04-27 05:50:38'),
+(8, 'Andrey Veras', 'andrey.ferreira@sempreceub.com', '$2y$10$hSoy5v95mmq7ktKps4oWZOKmuQoiFKfEMon9QZP3G3QlENiV8Gr.K', '(61) 9 8206-3125', 1, 1, '2021-10-24 23:23:43'),
+(9, 'Teste01', 'teste01@teste01.com', '$2y$10$tsOJLONU0EakZW7psFLa0OFeI5ieUQcykiXmx8NRsXQkQykpAKx5a', '(61) 9 9999-9999', 0, 1, '2021-10-24 23:24:52'),
+(10, 'Administrativo', 'adm@adm.com', '$2y$10$zsMGRzyIv/p1c4M88QA0WeBu7pAauDPlLR/L5WoOo6jGW0Sr97iPy', '(61) 7 7777-7777', 1, 1, '2021-10-25 00:13:01');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

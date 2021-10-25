@@ -1820,7 +1820,6 @@ form label.error {
 /* Navigation Menu Style  ||-------------------*/
 .nav-menu {
     position: static;
-    float: right;
     display: block;
 }
 
