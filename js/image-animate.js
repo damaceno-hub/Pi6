@@ -9,7 +9,7 @@
 
 $(window).on('scroll', function(){
   if($(window).scrollTop()){
-      $('#image').attr('src', 'img/logo-oslog.png');
+      $('#image').attr('src', 'img/logo-dark.png');
       $('#image').removeClass('logo-index');
 
   }else{

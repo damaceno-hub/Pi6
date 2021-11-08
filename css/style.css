@@ -3197,3 +3197,28 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
     vertical-align: middle;
     cursor: pointer;
 }
+
+
+.infos-section{
+    padding: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.infos-section:hover{
+    box-shadow: 0 0 1em black;
+    transition: all 0.3s ease 0s;
+}
+
+.limite-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical; 
+}
+
+.sublinha-nav{
+    border-bottom:solid #5c0eb4 2px;
+    font-weight: 800;
+}

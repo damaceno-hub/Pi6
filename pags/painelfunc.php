@@ -93,9 +93,9 @@
                         <li><a onclick="config()">Configurações</a></li>
                         <?php 
                             if($_SESSION['usuarioNiveisAcessoId'] == "1"){
-                                echo "<li><a onclick='painelfunc()'>Painel</a></li>";
+                                echo "<li><a onclick='funcionario()'>Painel</a></li>";
                             }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-                                echo "<li><a onclick='painelfunc()'>Painel</a></li>";
+                                echo "<li><a onclick='funcionario()'>Painel</a></li>";
                             }
                         ?>
                         <?php 
@@ -112,6 +112,18 @@
             <br>
             <br>
         <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="title-pg color-white">
+                        <?php
+                                echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo ao Painel Funcionário</span>";
+                        ?>
+                    </h2>
+                </div>
+                <br>
+                <br>
+            </div>
             
             <div class="row infos-section" onclick="services1()">
                 <div class="col">

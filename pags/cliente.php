@@ -9,8 +9,10 @@
 
     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
 
-    }elseif($_SESSION['usuarioNiveisAcessoId'] == "0"){
+    }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
 
+    }elseif($_SESSION['usuarioNiveisAcessoId'] == "0"){
+    
     }else{
         $_SESSION['msg'] = "Área Restrita";
         header("Location: ../cadastro/restrito.php"); 
@@ -42,28 +44,7 @@
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/controller.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
-
-        <script type="text/javascript">
-            function logout() {
-            window.open("sair.php", '_parent');
-            }
-            
-            function forum() {
-                window.open("../cliente/cliente.php", '_parent');
-            }
-
-            function painel() {
-                window.open("../cliente/painel.php", '_parent');
-            }
-
-            function config() {
-                window.open("../cliente/configuracoes.php", '_parent');
-            }
-
-            function curriculo() {
-                window.open("../cliente/curriculo.php", '_parent');
-            }
-        </script>
+        <script src="../js/onclicks.js" type="text/javascript"></script>
     </head>
     <body>
         <!-- Site preloader -->
@@ -108,9 +89,21 @@
 
                 <div class="nav-menu">
                     <ul class="nav-menu-inner">
-                        <li><a onclick="forum()">Home</a></li>
-                        <li><a onclick="curriculo()">Currículo</a></li>
+                        <li><a class="sublinha-nav" onclick="cliente()">Home</a></li>
+                        <li><a onclick="solicitar()">Solicitar</a></li>
                         <li><a onclick="config()">Configurações</a></li>
+                        <?php 
+                            if($_SESSION['usuarioNiveisAcessoId'] == "1"){
+                                echo "<li><a onclick='painelfunc()'>Painel</a></li>";
+                            }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
+                                echo "<li><a onclick='painelfunc()'>Painel</a></li>";
+                            }
+                        ?>
+                        <?php 
+                            if($_SESSION['usuarioNiveisAcessoId'] == "1"){
+                                echo "<li><a onclick='administrativo()'>Administrativo</a></li>";
+                            }
+                        ?>
                     </ul>
                 </div>
 
@@ -124,21 +117,66 @@
     <br>
             <br>
             <br>
-            <br>
-            <br>
+
+            
         <div class="container">
             <div class="row">
-                
                 <div class="col-md-12 text-center">
                     <h2 class="title-pg color-white">
                         <?php
                                 echo "Olá <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nome']."</span>, Bem-Vindo! - <span style='color:#5c0eb4; font-weight: 600;'>".$_SESSION['nivelNome']."</span> ";
                             ?>
                     </h2>
-                    
-                
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
 
-         
+        <div class="container">
+            <div class="row infos-section" onclick="services1()">
+                <div class="col">
+                    <img src="../img/services/img1.jpg" alt="img1" class="img-fluid" style="height: 400px; width: auto;
+                    margin-top: 7px; border-radius: 7px">
+                </div>
+                <div class="col">
+                    <h2 style="font-weight: 800; color: white"><span class="text-light">TÍTULO </span>ANÚNCIO</h2>
+                    <p class="max-width-700 lead limite-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row infos-section" onclick="services1()">
+                <div class="col">
+                    <img src="../img/services/img2.jpg" alt="img2" class="img-fluid" style="height: 400px; width: auto;
+                    margin-top: 7px; border-radius: 7px">
+                </div>
+                <div class="col">
+                    <h2 style="font-weight: 800; color: white"><span class="text-light">TÍTULO </span>ANÚNCIO</h2>
+                    <p class="max-width-700 lead limite-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row infos-section" onclick="services1()">
+                <div class="col">
+                    <img src="../img/services/img3.jpg" alt="img1" class="img-fluid" style="height: 400px; width: auto;
+                    margin-top: 7px; border-radius: 7px">
+                </div>
+                <div class="col">
+                    <h2 style="font-weight: 800; color: white"><span class="text-light">TÍTULO </span>ANÚNCIO</h2>
+                    <p class="max-width-700 lead limite-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                    
+                <br><br><br>
+
+        <footer id="foot">
+            <span style="color: #fff"> &copy; 2021 <a href="#" class="namefooter"><b>Oslog Segurança</b></a>. Todos os direitos reservados.</span>
+        </footer>
         <script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../js/plugins/jquery.magnific-popup.min.js" type="text/javascript"></script>
         <script src="../js/clock.js" type="text/javascript"></script>

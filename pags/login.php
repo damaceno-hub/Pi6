@@ -16,7 +16,7 @@
             <img src="img/logo-oslog.png" class="img-fluid img-pointer"/>
             <ul>
                 <li><a class="baixologo" href="index.php">Home</a></li>
-                <li><a class="baixologo" href="inicio.php">Login</a></li>
+                <li><a class="baixologo" href="index.php">Login</a></li>
             </ul>
         </div>
     </div>

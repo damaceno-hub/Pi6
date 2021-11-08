@@ -28,7 +28,7 @@
                     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
                         header("Location: ../pags/administrativo.php"); 
                     }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-                        header("Location: ../pags/cliente.php");
+                        header("Location: ../pags/funcionario.php");
                     }
                     else{
                         header("Location: ../pags/cliente.php");
