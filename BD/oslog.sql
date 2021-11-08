@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 25-Out-2021 às 00:13
+-- Tempo de geração: 08-Nov-2021 às 04:34
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.3.21
 
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `niveis_acessos` (
   `created` datetime NOT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `niveis_acessos`
@@ -95,7 +95,8 @@ CREATE TABLE IF NOT EXISTS `niveis_acessos` (
 
 INSERT INTO `niveis_acessos` (`id`, `nome`, `created`, `modified`) VALUES
 (0, 'Cliente', '2021-04-07 00:00:00', NULL),
-(1, 'Administrativo', '2021-04-07 00:00:00', NULL);
+(1, 'Administrativo', '2021-04-07 00:00:00', NULL),
+(2, 'Funcionario', '2021-04-07 00:00:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -136,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `genero_id` int(11) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `usuarios`
@@ -146,7 +147,9 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `telefone`, `niveis_aces
 (1, 'Ronin', 'roninls@sempreceub.com', '$2y$10$LHNDbYoB.SUCJ4YvvlyU8eLDwRqDBu0.cY.EpcATvwXEFLRufRRKe', '(61) 9 8565-2243', 1, 1, '2021-04-27 05:50:38'),
 (8, 'Andrey Veras', 'andrey.ferreira@sempreceub.com', '$2y$10$hSoy5v95mmq7ktKps4oWZOKmuQoiFKfEMon9QZP3G3QlENiV8Gr.K', '(61) 9 8206-3125', 1, 1, '2021-10-24 23:23:43'),
 (9, 'Teste01', 'teste01@teste01.com', '$2y$10$tsOJLONU0EakZW7psFLa0OFeI5ieUQcykiXmx8NRsXQkQykpAKx5a', '(61) 9 9999-9999', 0, 1, '2021-10-24 23:24:52'),
-(10, 'Administrativo', 'adm@adm.com', '$2y$10$zsMGRzyIv/p1c4M88QA0WeBu7pAauDPlLR/L5WoOo6jGW0Sr97iPy', '(61) 7 7777-7777', 1, 1, '2021-10-25 00:13:01');
+(10, 'Administrativo', 'adm@adm.com', '$2y$10$zsMGRzyIv/p1c4M88QA0WeBu7pAauDPlLR/L5WoOo6jGW0Sr97iPy', '(61) 7 7777-7777', 1, 1, '2021-10-25 00:13:01'),
+(11, 'Teste02', 'teste02@teste02.com', '$2y$10$E00A3zKR4lJk4M8Is5lD1egswlhlbMkmAU0mHOoBotzHyIUAQeZCm', '(61) 8 8888-8888', 0, 1, '2021-10-25 11:51:54'),
+(12, 'Funcionario', 'fun01@fun.com', '$2y$10$XHNTUeTPhXxqKRGaZmtBUehhl.NgD9xXwjRAlAVGsjcEN1n0VURke', '(61) 8 8888-8888', 2, 1, '2021-11-07 22:32:22');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
