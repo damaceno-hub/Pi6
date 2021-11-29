@@ -12,7 +12,7 @@
         <meta name="description" content="">
         <meta name="author" content="ronindesign">
     
-        <title>Login :: TEIA</title>
+        <title>Login :: Oslog</title>
 
         <!-- FAVICON -->
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>

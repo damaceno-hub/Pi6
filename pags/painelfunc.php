@@ -9,7 +9,7 @@
 
     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
 
-    }elseif($_SESSION['usuarioNiveisAcessoId'] == "0"){
+    }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
 
     }else{
         $_SESSION['msg'] = "Área Restrita";
@@ -90,12 +90,12 @@
                     <ul class="nav-menu-inner">
                         <li><a onclick="cliente()">Home</a></li>
                         <li><a onclick="solicitar()">Solicitar</a></li>
-                        <li><a onclick="config()">Configurações</a></li>
+                        <li><a onclick="perfil()">Perfil</a></li>
                         <?php 
                             if($_SESSION['usuarioNiveisAcessoId'] == "1"){
                                 echo "<li><a onclick='funcionario()'>Painel</a></li>";
                             }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-                                echo "<li><a onclick='funcionario()'>Painel</a></li>";
+                                echo "<li><a onclick='painelfunc()'>Painel</a></li>";
                             }
                         ?>
                         <?php 

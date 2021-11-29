@@ -3,5 +3,5 @@
     unset($_SESSION['id'], $_SESSION['nome'], $_SESSION['email']);
 
     $_SESSION['msg'] = "Área Restrita";
-    header("Location: ../index.php");
+    header("Location: ../inicio.php");
 ?>

@@ -22,20 +22,21 @@
                     $_SESSION['nome'] = $row_usuario['nome'];
                     $_SESSION['email'] = $row_usuario['email'];
                     $_SESSION['telefone'] = $row_usuario['telefone'];
+                    $_SESSION['bio'] = $row_usuario['bio'];
                     $_SESSION['genero'] = $row_usuario['genero_id'];
                     $_SESSION['grau_esc'] = $row_usuario['grau_esc_id'];
                     $_SESSION['usuarioNiveisAcessoId'] = $row_usuario['niveis_acesso_id'];
                     if($_SESSION['usuarioNiveisAcessoId'] == "1"){
                         header("Location: ../pags/administrativo.php"); 
                     }elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-                        header("Location: ../pags/funcionario.php");
+                        header("Location: ../pags/painelfunc.php");
                     }
                     else{
                         header("Location: ../pags/cliente.php");
                     } 
                 }else{
                     $_SESSION['msg'] = "Login ou Senha incorreto!";
-                    header("Location: ../index.php");
+                    header("Location: ../inicio.php");
                 }
             }
             
@@ -50,10 +51,10 @@
 
         }else{
             $_SESSION['msg'] = "Login ou Senha incorreto!";
-            header("Location: ../index.php");
+            header("Location: ../inicio.php");
         }
     }else{
         $_SESSION['msg'] = "Página não encontrada!";
-        header("Location: ../index.php");
+        header("Location: ../inicio.php");
     }
 ?>

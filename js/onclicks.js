@@ -18,8 +18,8 @@ function painelfunc() {
     window.open("../pags/painelfunc.php", '_parent');
 }
 
-function config() {
-    window.open("../pags/configuracoes.php", '_parent');
+function perfil() {
+    window.open("../pags/perfil.php", '_parent');
 }
 
 function solicitar() {
